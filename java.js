@@ -1,12 +1,12 @@
 
 
-    let usuario, email, contraseña;
-    usuario = document.getElementById("user");
+    let user, email, contraseña;
+    user = document.getElementById("user");
     email = document.getElementById("email");
     contraseña = document.getElementById("contraseña");
+    console.log ("hola")
     
-    
-    if (usuario === '') {
+    if (user === "") {
         alert("el campo usuario es requerido");
         
     }
