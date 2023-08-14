@@ -1,0 +1,7 @@
+.error{
+    opacity: 0;
+}
+.error-mensaje{
+    opacity: 1;
+    color: red;
+}

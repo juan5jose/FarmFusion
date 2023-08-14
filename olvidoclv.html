@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Olvidó Contraseña</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <main>
         <div>
             <img src="img/FarmFusion2-.png" alt="Logo"><br>
-            <input type="text" placeholder="Usuario" id="input_usuario"><br><br>
-            <button><a href="#" id="boton_recuperar">Recuperar</a></button>
+            <input type="text" placeholder="Usuario" id="input_usuario" required><br><br>
+            <p class="error" id="error">Usuario no valido</p>
+            <button><a href="#" id="boton_recuperar" onclick="validar()" >Recuperar</a></button>
         </div>
     </main>
     <script src="js/script.js"></script>
