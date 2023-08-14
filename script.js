@@ -1,15 +1,19 @@
+
 function validar (){
 
     let user = document.getElementById("user");
     let email= document.getElementById("email");
     let pass= document.getElementById("pass");
-    let form= document.getElementById("form")
+    let form= document.getElementById("form");
+    let boton = document.getElementById("boton");
     
     if (user === '' ){
-        alert ("los campos usuario, email y contraseña son requeridos");
-    }    
+        alert("el campo usuario es requerido");
+    }
 
 }
+
+
 
 
 
