@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Página de Bienvenida</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+     <center><img class="logo" src="FarmFusion.png" alt="Logo"></center> 
+      <center><h1 class="message">Bienvenidos</h1></center>
+      <center><button class="button">Ingresar</button></center>
+      <script>
+      const button = document.querySelector('.button');
+
+button.addEventListener('click', () => {
+  window.location.href = 'login.html';
+});
+</script>
+    </div>
+    <div class="right"></div>
+  </div>
+</body>
+</html>
