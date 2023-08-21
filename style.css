@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+
+}
+
+.container{
+    background-color: #64A0D7;
+    padding: 0%;
+    border-radius: 10px;
+    width: 600px;
+    height: 1100px;
+    margin-top: 200px;
+    
+}
+
+.container__registro{
+    margin-bottom: 200px;
+    width: 100%;
+    height: 900px;
+    text-align: center;
+}
+
+.container__form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+}
+.container__input{
+    text-align: center;
+    
+
+}
+label{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.container__select{
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+
+}
+
+.container__btn{
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    font-family: 'Karla', sans-serif;
+    border: 2px solid #64A0D7;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 200px;
+}
+.container__btn:hover{
+    background-color: #64A0D7;
+}
+.container__logo{
+    margin-bottom: 200;
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+}
