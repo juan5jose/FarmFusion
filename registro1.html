@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/registro.js"></script>
+    <link rel="stylesheet" href="css/style3.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="container__registro">
+            <div class="container__logo">
+                <img src="img/FarmFusion.png" alt="">
+            </div>
+
+            
+            <form id="form" class="container__form" onsubmit="return validar()" >        
+                <center>
+                    <div class="container__input">
+                        <label for="name">Nombres</label><br>                    
+                        <input type="text" name="" id="name" placeholder="Ingrese sus nombres" > <br> <br>
+                        <label for="apellidos">Apellidos</label><br>
+                        <input type="text" name="" id="apellido" placeholder="Ingrese sus apellidos" required> <br> <br>
+                        <label for="correo">Correo electronico</label><br>
+                        <input type="email" name="" id="email" placeholder="ingrese su correo electronico" required> <br> <br>
+                        <label for="user">Usuario</label><br>
+                        <input type="text" name="user" id="user" placeholder="ingrese su usuario" required > <br> <br>
+                        <label for="pass">Contraseña</label><br>
+                        <input type="password" name="" id="pass" placeholder="Ingrese su contraseña" required > <br> <br>
+                        <label for="select">Elija su rol</label><br>
+                        <select class="container__select" name="select" id="select">
+                            <option>Comprador</option>
+                            <option>Vendedor</option>
+                        </select>
+                    </div>
+                    <button class="container__btn"><a href="farmfusion.html">Ingresar</a>
+                </center>                        
+            </form>
+        </div>
+    </div>
+</body>
+</html>

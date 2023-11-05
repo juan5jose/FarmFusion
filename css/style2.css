@@ -1,0 +1,175 @@
+.boton__4 {
+  background-color: #e2e3e5;
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 80px;
+  position: relative;
+  top: -160px;
+  left: 20px;
+}
+
+.boton__3 {
+  background-color: #64A0D7;
+  color: rgb(250, 245, 245);
+  padding: 30px 60px;
+  font-size: 25px;
+  border: none;
+  border-radius: 80px;
+  position: relative;
+  top: -840px;
+  left: 370px;
+}
+
+.boton__2 {
+  background-color: #64A0D7;
+  color: rgb(250, 245, 245);
+  padding: 30px 60px;
+  font-size: 25px;
+  border: none;
+  border-radius: 80px;
+  position: relative;
+  top: -840px;
+  left: 320px;
+}
+
+.boton__1 {
+  background-color: #64A0D7;
+  color: rgb(250, 245, 245);
+  padding: 30px 40px;
+  font-size: 25px;
+  border: none;
+  border-radius: 80px;
+  position: relative;
+  top: -840px;
+  left: 250px;
+}
+
+.img__7 {
+  position: absolute;
+  margin-left: 1080px;
+  width: 40px;
+  height: 90px;
+  border-radius: 0%;
+  margin-top: -120px;
+}
+
+.parrafo__u {
+  margin-left: 10px;
+  margin-right: 255px;
+  margin-top: 90px;
+}
+
+.texto {
+  display: flex;
+}
+
+.Productos {
+  background-color: #e2e3e5;
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 80px;
+  position: relative;
+  top: -160px;
+  left: 10px;
+}
+
+.FarmFusion {
+  position: relative;
+  top: -150px;
+  color: rgb(255, 255, 255);
+  margin-left: 10px;
+  font-size: 80px;
+}
+
+.setting {
+  position: relative;
+  top: -160px;
+  color: rgb(8, 8, 8);
+  margin-left: 870px;
+  font-size: 30px;
+}
+
+.img__6 {
+  position: absolute;
+  margin-left: 1060px;
+  width: 50px;
+  height: 50px;
+  border-radius: 0%;
+  margin-top: -165px;
+}
+
+.perfil {
+  position: relative;
+  top: -90px;
+  color: rgb(8, 8, 8);
+  margin-left: 125px;
+  font-size: 30px;
+}
+
+.img__5 {
+  position: absolute;
+  margin-left: 5px;
+  width: 115px;
+  height: 110px;
+  border-radius: 50%;
+  margin-top: -125px;
+}
+
+.img__4 {
+  position: absolute;
+  width: 100%;
+  top: 300px;
+  height: 400px;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../img/frutas.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.img__3 {
+  position: absolute;
+  margin-left: 1030px;
+  width: 50px;
+  height: 50px;
+  border-radius: 0%;
+  margin-top: -200px;
+}
+
+.titulo__2 {
+  position: relative;
+  top: -120px;
+  color: rgb(242, 238, 238);
+  margin-left: 10px;
+  font-size: 30px;
+}
+
+.img__1 {
+  position: absolute;
+  margin-left: 5px;
+  width: 150px;
+  height: 110px;
+  border-radius: 0%;
+  margin-top: -190px;
+}
+
+.linea-azul {
+  border-top: 0px solid #64A0D7;
+  border-width: 150px;
+}
+
+button {
+  background-color: #e2e3e5;
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 80px;
+  position: relative;
+  top: -130px;
+  left: 980px;
+}
