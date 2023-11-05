@@ -1,4 +1,3 @@
-
 function validar (){
 
     let user = document.getElementById("user");
@@ -12,8 +11,3 @@ function validar (){
     }
 
 }
-
-
-
-
-
