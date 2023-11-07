@@ -1,14 +1,22 @@
-/* css olvidoclv.html */
-.error{
-    opacity: 0;
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@1,300;1,500&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Karla", sans-serif;
+	text-decoration: none;
 }
-.error-mensaje{
-    opacity: 1;
-    color: red;
+/* css olvidoclv.html */
+.error {
+	opacity: 0;
+}
+.error-mensaje {
+	opacity: 1;
+	color: red;
 }
 
 /* css farmfusion.html */
-.img__7{
+.img__7 {
 	position: absolute;
 	margin-left: 1080px;
 	width: 40px;
@@ -84,8 +92,7 @@
 	width: 100%;
 	top: 300px;
 	height: 400px;
-	background-image:
-		linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
 		url(../img/frutas.png);
 	background-position: center;
 	background-size: cover;
@@ -121,10 +128,9 @@ input {
 	border-radius: 50px;
 	font-size: 20px;
 	border: 1px solid #e4e2e2;
-	transition: all .7s ease;
+	transition: all 0.7s ease;
 	width: 400px;
 }
-
 
 .search__1 {
 	position: absolute;
@@ -152,7 +158,7 @@ input {
 }
 
 .linea-azul {
-	border-top: 0px solid #64A0D7;
+	border-top: 0px solid #64a0d7;
 	border-width: 150px;
 }
 
@@ -163,7 +169,8 @@ input {
 	color: rgb(242, 238, 238);
 }
 
-button {
+.titulo__1 button,
+.Productos {
 	background-color: #e2e3e5;
 	color: rgb(0, 0, 0);
 	padding: 10px 20px;
@@ -176,67 +183,191 @@ button {
 }
 
 /* css index.html */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Karla', sans-serif;
-  }
-  
-  .container {
-    display: flex;
-    height: 100%;
-    text-align: right;
-  }
-  
-  .left {
-    width: 70%;
-    background-color: #ffffff;
-  }
-  
-  .right {
-    width: 50%;
-    background-color: #64A0D7;
-    height: 110vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-  }
-  
-  .logo {
-    margin-bottom: 10px;
-    width: 80%;
-    text-align: center;
-  }
-  
-  .message {
-    margin-top: -14%;
-    margin-left: 10vh;
-    font-weight: 'Karla';
-    font-size: large;
-    margin-bottom: 30px;
-    margin: 100;
-    padding: 100;
-  }
-  
-  .button {
-    margin-top: 3vh;
-    margin-left: 10vh;
-    padding: 10px 20px;
-    background-color: #ffffff;
-    color: #000000;
-    font-family: 'Karla', sans-serif;
-    border: 2px solid #64A0D7;
-    cursor: pointer;
-  }
-  
-  .button:hover,
-  .button:focus {
-    background-color: #64A0D7;
-    color: #ffffff;
-  }
-  
-  .button:active {
-    background-color: #64A0D7;
-  }
+.Inicio {
+	overflow: hidden;
+}
+.contenedor__inicio {
+	display: flex;
+	height: 100%;
+	text-align: right;
+}
+
+.left {
+	width: 70%;
+	background-color: #ffffff;
+	position: relative;
+	top: 50%;
+	transform: translateY(-12%);
+}
+
+.right {
+	width: 50%;
+	background-color: #64a0d7;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+}
+.logo {
+	margin-bottom: 10px;
+	width: 80%;
+	text-align: center;
+}
+
+.message {
+	margin-top: -14%;
+	margin-left: 10vh;
+	font-size: large;
+	margin-bottom: 30px;
+	margin: 100;
+	padding: 100;
+}
+
+.button {
+	margin-top: 3vh;
+	margin-left: 10vh;
+	padding: 10px 20px;
+	background-color: #ffffff;
+	color: #000000;
+	border: 2px solid #64a0d7;
+	cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+	background-color: #64a0d7;
+	color: #ffffff;
+	transition: 0.5s;
+}
+
+.button:active {
+	background-color: #64a0d7;
+}
+/* Login */
+.contenedor {
+	background-color: #64a0d7;
+	border-radius: 41px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 93vh;
+	width: 500px;
+	margin: auto;
+	position: relative;
+	transform: translateY(3%);
+	flex-direction: column;
+	align-items: center;
+}
+
+.logo img {
+	width: 90%;
+	text-align: center;
+}
+
+.login-form {
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+	width: 100%;
+}
+
+label {
+	font-size: 18px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+	padding: 6px;
+	margin-bottom: 15px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 16px;
+	width: 100%;
+}
+
+.login-button {
+	padding: 10px 20px;
+	background-color: white;
+	color: black;
+	border: 2px solid #64a0d7;
+	border-radius: 20px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.login-button:hover {
+	background-color: #acd7ff;
+	transition: 0.5s;
+}
+
+.bottom-links {
+	margin-top: 17px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.forgot-password,
+.create-account {
+	text-decoration: none;
+	color: #ffffffff;
+}
+
+.forgot-password:hover,
+.create-account:hover {
+	text-decoration: underline;
+}
+/* Registro */
+.container {
+	background-color: #64a0d7;
+	border-radius: 10px;
+	width: 600px;
+	margin: auto;
+}
+
+.container__form {
+	display: flex;
+	flex-direction: column;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+label {
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+.container__input input[type="text"],
+.container__input input[type="password"],
+.container__input input[type="email"],
+.container__select {
+	padding: 10px;
+	margin-bottom: 15px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 16px;
+}
+
+.container__btn {
+	padding: 10px 20px;
+	background-color: white;
+	color: black;
+	border: 2px solid #64a0d7;
+	border-radius: 32px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+	margin-bottom: 56px;
+}
+.container__btn:hover {
+	background-color: #acd7ff;
+}
+.container__logo {
+	padding-top: 41px;
+	width: 100%;
+	text-align: center;
+}
+/* Recuperar.html */
+.text__recuperar{
+	width: 66%;
+	color: #fff;
+}
