@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Karla", sans-serif;
+	text-decoration: none;
+}
+
+header {
+    background-color: #64a0d7;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px; 
+}
+
+header img {
+    width: 200px; 
+}
+
+header button {
+    font-size: 19px; 
+    background-color: white; 
+    color: black; 
+    border: none;
+    padding: 10px 15px; 
+    border-radius: 10px; 
+    cursor: pointer;
+}
+
+header button:hover {
+    background-color: #9ac4ee; 
+}
+
+section {
+    flex: 1;
+    text-align: left;
+}
+
+section button {
+    font-size: 18px;
+    padding: 12px 20px;
+    margin: 5px;
+    display: flex;
+    align-items: center; 
+    background-color: white; 
+    color: black; 
+}
+
+section button i {
+    margin-right: 8px; 
+}
+
+section button:hover {
+    background-color: #9ac4ee; 
+}
+
+main {
+    margin: 20px;
+}
+
+.form-container {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.inputField {
+    margin-bottom: 15px;
+}
+
+.inputField label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.flex-container {
+    background-color: #ccc;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+}
+
+.flex-item {
+    text-align: left;
+    margin: 0 10px; 
+}
+
+.flex-item:first-child {
+    margin-right: auto; 
+}
+
+.flex-item:last-child {
+    margin-left: auto; 
+}
+
+.flex-item p {
+    cursor: pointer;
+    margin: 5px 0;
+}
+
