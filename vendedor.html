@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FarmFusion</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f3f3f3;
+    }
+
+    header {
+      background-color: #e0eaf5; 
+      padding: 10px;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      z-index: 2;
+    }
+
+    #logo {
+      width: 210px; 
+      max-height: 200px;
+      margin-right: 20px;
+    }
+
+
+    #logout {
+      margin-top: 10px;
+      cursor: pointer;
+      font-size: 16px; 
+      border: 2px solid #fff; 
+      padding: 5px 8px; 
+      border-radius: 19px; 
+      transition: background-color 0.3s ease; 
+      margin-left: -170px;
+    }
+
+    #logout:hover {
+      background-color: #fff; 
+    }
+
+    #cart {
+      margin-top: 10px;
+      cursor: pointer;
+      font-size: 20px; 
+      margin-left: -120px; 
+      width: 65px;
+    }
+
+    main {
+      background-color: rgba(255, 255, 255, 0.7); 
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    #profile-section {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    #profile-image {
+      width: 40px; 
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px; 
+    }
+
+    #user-type {
+      font-size: 18px;
+      margin-left: 1020px; 
+      margin-top: -20px;
+    }
+
+    #config-icon {
+      font-size: 24px;
+      cursor: pointer;
+      width: 40px; 
+      margin-top: -15px;
+      margin-left: 40px;
+    }
+
+    #productos-button {
+      margin-top: 20px;
+      padding: 10px;
+      border-radius: 70%;
+      background-color: #4CAF50; 
+      color: white;
+      border: none;
+      border-radius: 5px; 
+      cursor: pointer;
+      font-size: 18px;
+      margin-left: -840px;
+    }
+
+    #productos-section {
+      
+      height: 280px; 
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      margin-top: 20px;
+      width: 900px;
+    }
+
+    footer {
+      background-color: rgba(204, 204, 204, 0.8);
+      padding: 10px;
+      text-align: center;
+      display: flex;
+      width: 100%;
+      margin-top: 20px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .flex-container {
+      display: flex;
+    }
+
+    .flex-item {
+      text-align: left;
+      margin: 0 10px; 
+    }
+
+    .flex-item:first-child {
+      margin-right: auto; 
+    }
+
+    .flex-item:last-child {
+      margin-left: auto; 
+    }
+
+    .flex-item p {
+      cursor: pointer;
+      margin: 5px 0;
+
+    }
+    #agregar-productos-button {
+        margin-top: -40px;
+      padding: 10px;
+      border-radius: 70%;
+      background-color: #4CAF50; 
+      color: white;
+      border: none;
+      border-radius: 5px; 
+      cursor: pointer;
+      font-size: 18px;
+
+      margin-left: -560px;
+    }
+    
+    #search-container {
+      display: flex;
+      justify-content: space-around; 
+      align-items: center; 
+      width: 300px; 
+      margin-left: -310px;
+    }
+
+    h2 {
+      margin: 0;
+    }
+    .hash {
+      font-size: 20px;
+      justify-content: space-around;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="img/FarmFusion.png" alt="Logo de la tienda" id="logo">
+    <div id="search-container">
+        <div>
+          <h2>inventario</h2>
+          <span class="hash">#</span>
+        </div>
+        <div>
+          <h2>bajas</h2>
+          <span class="hash">#</span>
+        </div>
+        <div>
+          <h2>ventas</h2>
+          <span class="hash">#</span>
+        </div>
+      </div>
+    <div>
+      <div id="logout">Cerrar Sesión</div>
+      <div id="cart">🛒</div>
+    </div>
+  </header>
+
+  <main>
+    <div id="profile-section">
+      <img src="img/usuario.png" alt="Foto de perfil" id="profile-image">
+      <div>
+        <div>Nombre del Usuario</div>
+        <div id="user-type">vendedor</div>
+      </div>
+      <div id="config-icon">⚙</div>
+    </div>
+    <div id="productos-section">
+      <button id="productos-button">Productos</button>
+      <button id="agregar-productos-button">Agregar Productos</button>
+    </div>
+   
+  </main>
+
+  <footer class="flex-container">
+    <div class="flex-item">
+      <p>Mi cuenta</p>
+      <p>Mis compras</p>
+      <p>Formas de pago</p>
+      <p>Devoluciones</p>
+      <p>Ventajas y servicios</p>
+    </div>
+    <div class="flex-item">
+      <p>Síguenos</p>
+      <p>Instagram</p>
+      <p>Facebook</p>
+      <p>Youtube</p>
+    </div>
+    <div class="flex-item">
+      <p>Contenidos</p>
+      <p>Catálogos digitales</p>
+      <p>Supermercado</p>
+      <p>Promoción</p>
+      <p>Sobre nosotros</p>
+    </div>
+  </footer>
+
+</body>
+</html>

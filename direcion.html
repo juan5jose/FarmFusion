@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FarmFusion</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      
+    }
+
+    header {
+      background-color: #e0eaf5; 
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    #logo {
+      width: 210px; 
+      max-height: 200px;
+      margin-right: 20px;
+    }
+
+    #logout {
+      cursor: pointer;
+      font-size: 16px; 
+      border: 2px solid #fff; 
+      padding: 5px 8px; 
+      border-radius: 19px; 
+      transition: background-color 0.3s ease; 
+    }
+
+    #logout:hover {
+      background-color: #fff; 
+    }
+
+    #cart {
+      cursor: pointer;
+      font-size: 20px; 
+      margin-left: 10px; 
+      width: 65px;
+    }
+
+    #info-container {
+      margin-top: 20px;
+      padding: 20px;
+      background-color: #f3f3f3;
+      width: 300px; 
+      margin: auto; 
+      margin-right: 1030px;
+    }
+
+    .info-field {
+      margin-bottom: 10px;
+    }
+
+    .info-field label {
+      display: block;
+      font-weight: bold;
+    }
+
+    .info-field input {
+      width: calc(100% - 16px); 
+      padding: 8px;
+      box-sizing: border-box;
+      margin-top: 5px;
+    }
+
+    footer {
+      background-color: rgba(204, 204, 204, 0.8);
+      padding: 10px;
+      text-align: center;
+      display: flex;
+      width: 100%;
+      margin-top: 20px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .flex-container {
+      display: flex;
+    }
+
+    .flex-item {
+      text-align: left;
+      margin: 0 10px; 
+    }
+
+    .flex-item:first-child {
+      margin-right: auto; 
+    }
+
+    .flex-item:last-child {
+      margin-left: auto; 
+    }
+
+    .flex-item p {
+      cursor: pointer;
+      margin: 5px 0;
+    }
+
+    .img-body {
+      position: relative; 
+      width: 280px; 
+      height: 280px; 
+      overflow: hidden; 
+      margin-left: 740px;
+      top: -250px;
+    }
+
+    .img-body img {
+      position: absolute;
+      padding: 0 ; 
+      width: 100%; 
+      height: auto; 
+      
+    }
+  </style>
+</head>
+<body>
+  
+  <header>
+    <img src="img/FarmFusion.png" alt="Logo de la tienda" id="logo">
+    <div>
+      <div id="logout">Cerrar Sesión</div>
+      <div id="cart">🛒</div>
+    </div>
+  </header>
+
+  <div id="info-container">
+    <div class="info-field">
+      <label for="direccion">Dirección:</label>
+      <input type="text" id="direccion" name="direccion">
+    </div>
+    <div class="info-field">
+      <label for="ciudad">Ciudad:</label>
+      <input type="text" id="ciudad" name="ciudad">
+    </div>
+    <div class="info-field">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre">
+    </div>
+    <div class="info-field">
+      <label for="apellido">Apellido:</label>
+      <input type="text" id="apellido" name="apellido">
+    </div>
+   
+  </div>
+  <div class="img-body">
+    <img src="./img/ubicacion.jpg" alt="Descripción de la imagen">
+  </div>
+  <footer class="flex-container">
+    <div class="flex-item">
+      <p>Mi cuenta</p>
+      <p>Mis compras</p>
+      <p>Formas de pago</p>
+      <p>Devoluciones</p>
+      <p>Ventajas y servicios</p>
+    </div>
+    <div class="flex-item">
+      <p>Síguenos</p>
+      <p>Instagram</p>
+      <p>Facebook</p>
+      <p>Youtube</p>
+    </div>
+    <div class="flex-item">
+      <p>Contenidos</p>
+      <p>Catálogos digitales</p>
+      <p>Supermercado</p>
+      <p>Promoción</p>
+      <p>Sobre nosotros</p>
+    </div>
+  </footer>
+
+</body>
+</html>
