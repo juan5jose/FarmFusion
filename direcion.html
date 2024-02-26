@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/5b0b5e6889.js" crossorigin="anonymous"></script>
   <title>FarmFusion</title>
   <style>
     body {
@@ -13,7 +14,7 @@
     }
 
     header {
-      background-color: #e0eaf5; 
+      background-color: #64a0d7; 
       padding: 10px;
       display: flex;
       align-items: center;
@@ -127,12 +128,13 @@
   <header>
     <img src="img/FarmFusion.png" alt="Logo de la tienda" id="logo">
     <div>
-      <div id="logout">Cerrar Sesión</div>
+      <a href="Index.html"><div id="logout">Cerrar Sesión</div></a>
       <div id="cart">🛒</div>
     </div>
   </header>
 
   <div id="info-container">
+    <a href="herramientas.html"><i class="fa-solid fa-arrow-left"></i></a>
     <div class="info-field">
       <label for="direccion">Dirección:</label>
       <input type="text" id="direccion" name="direccion">

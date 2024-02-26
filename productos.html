@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +14,7 @@
     }
 
     header {
-      background-color: #e0eaf5; 
+      background-color: #64a0d7;
       padding: 10px;
       text-align: left;
       display: flex;
@@ -24,7 +25,7 @@
     }
 
     #logo {
-      width: 210px; 
+      width: 210px;
       max-height: 200px;
       margin-right: 20px;
     }
@@ -32,59 +33,59 @@
     #search-container {
       display: flex;
       flex-direction: column;
-      align-items: flex-start; 
+      align-items: flex-start;
       margin-left: -190px;
     }
 
     #search-bar {
       margin-top: 10px;
       display: flex;
-      border-radius: 20px; 
-      overflow: hidden; 
-      background-color: #fff; 
+      border-radius: 20px;
+      overflow: hidden;
+      background-color: #fff;
     }
 
     #search-bar input {
-      flex-grow: 0.5;   
-      padding: 8px; 
+      flex-grow: 0.5;
+      padding: 8px;
       border: none;
-      outline: none; 
+      outline: none;
     }
 
     #search-bar button {
-      padding: 8px 10px; 
-      background-color: #4CAF50; 
+      padding: 8px 10px;
+      background-color: #4CAF50;
       color: white;
       border: none;
-      border-radius: 0 20px 20px 0; 
+      border-radius: 0 20px 20px 0;
       cursor: pointer;
     }
 
     #logout {
       margin-top: 10px;
       cursor: pointer;
-      font-size: 16px; 
-      border: 2px solid #fff; 
-      padding: 5px 8px; 
-      border-radius: 19px; 
-      transition: background-color 0.3s ease; 
+      font-size: 16px;
+      border: 2px solid #fff;
+      padding: 5px 8px;
+      border-radius: 19px;
+      transition: background-color 0.3s ease;
       margin-left: -170px;
     }
 
     #logout:hover {
-      background-color: #fff; 
+      background-color: #fff;
     }
 
     #cart {
       margin-top: 10px;
       cursor: pointer;
-      font-size: 20px; 
-      margin-left: -120px; 
+      font-size: 20px;
+      margin-left: -120px;
       width: 65px;
     }
 
     main {
-      background-color: rgba(255, 255, 255, 0.7); 
+      background-color: rgba(255, 255, 255, 0.7);
       padding: 20px;
       display: flex;
       flex-direction: column;
@@ -108,14 +109,14 @@
 
     #user-type {
       font-size: 18px;
-      margin-left: 1020px; 
+      margin-left: 1020px;
       margin-top: -20px;
     }
 
     #config-icon {
       font-size: 24px;
       cursor: pointer;
-      width: 40px; 
+      width: 40px;
       margin-top: -15px;
       margin-left: 40px;
     }
@@ -124,10 +125,10 @@
       margin-top: 20px;
       padding: 10px;
       border-radius: 70%;
-      background-color: #4CAF50; 
+      background-color: #4CAF50;
       color: white;
       border: none;
-      border-radius: 5px; 
+      border-radius: 5px;
       cursor: pointer;
       font-size: 18px;
       margin-left: -840px;
@@ -135,7 +136,7 @@
 
     #productos-section {
       display: flex;
-      flex-direction: row; 
+      flex-direction: row;
       align-items: center;
       margin-top: 20px;
     }
@@ -173,15 +174,15 @@
 
     .flex-item {
       text-align: left;
-      margin: 0 10px; 
+      margin: 0 10px;
     }
 
     .flex-item:first-child {
-      margin-right: auto; 
+      margin-right: auto;
     }
 
     .flex-item:last-child {
-      margin-left: auto; 
+      margin-left: auto;
     }
 
     .flex-item p {
@@ -190,17 +191,17 @@
     }
 
     .ver-mas {
-    margin-top: 10px;
-    padding: 8px 16px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
+      margin-top: 10px;
+      padding: 8px 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
   </style>
 </head>
+
 <body>
 
   <header>
@@ -213,72 +214,73 @@
       </div>
     </div>
     <div>
-      <div id="logout">Cerrar Sesión</div>
+      <a href="Index.html">
+        <div id="logout">Cerrar Sesión</div>
+      </a>
       <div id="cart">🛒</div>
     </div>
   </header>
 
   <main>
     <div id="profile-section">
-      
-      
+
+
       <div id="productos-section">
         <div class="product-container">
-            <img src="img/cafe.jpg.jpg" alt="Producto 1" class="product-image">
-            <div class="product-info">
-                <h2>Producto 1</h2>
-                <p>cafe en grano</p>
-                <p>Precio: $XX.XX</p>
-            </div>
-            <button class="ver-mas">Ver más</button>
+          <img src="img/cafe.jpg.jpg" alt="Producto 1" class="product-image">
+          <div class="product-info">
+            <h2>Producto 1</h2>
+            <p>cafe en grano</p>
+            <p>Precio: $XX.XX</p>
+          </div>
+          <a href="infoproduc.html"><button class="ver-mas">Ver más</button></a>
         </div>
 
         <div class="product-container">
-            <img src="img/yuca.jpg.jpg" alt="Producto 2" class="product-image">
-            <div class="product-info">
-                <h2>Producto 2</h2>
-                <p>yuca</p>
-                <p>Precio: $XX.XX</p>
-            </div>
-            <button class="ver-mas">Ver más</button>
+          <img src="img/yuca.jpg.jpg" alt="Producto 2" class="product-image">
+          <div class="product-info">
+            <h2>Producto 2</h2>
+            <p>yuca</p>
+            <p>Precio: $XX.XX</p>
+          </div>
+          <button class="ver-mas">Ver más</button>
         </div>
 
         <div class="product-container">
-            <img src="img/papas.jpg.jpg" alt="Producto 3" class="product-image">
-            <div class="product-info">
-                <h2>Producto 3</h2>
-                <p>papa capira</p>
-                <p>Precio: $XX.XX</p>
-            </div>
-            <button class="ver-mas">Ver más</button>
+          <img src="img/papas.jpg.jpg" alt="Producto 3" class="product-image">
+          <div class="product-info">
+            <h2>Producto 3</h2>
+            <p>papa capira</p>
+            <p>Precio: $XX.XX</p>
+          </div>
+          <button class="ver-mas">Ver más</button>
         </div>
+      </div>
+  </main>
+
+  <footer class="flex-container">
+    <div class="flex-item">
+      <p>Mi cuenta</p>
+      <p>Mis compras</p>
+      <p>Formas de pago</p>
+      <p>Devoluciones</p>
+      <p>Ventajas y servicios</p>
     </div>
-</main>
-
-<footer class="flex-container">
-  <div class="flex-item">
-    <p>Mi cuenta</p>
-    <p>Mis compras</p>
-    <p>Formas de pago</p>
-    <p>Devoluciones</p>
-    <p>Ventajas y servicios</p>
-  </div>
-  <div class="flex-item">
-    <p>Síguenos</p>
-    <p>Instagram</p>
-    <p>Facebook</p>
-    <p>Youtube</p>
-  </div>
-  <div class="flex-item">
-    <p>Contenidos</p>
-    <p>Catálogos digitales</p>
-    <p>Supermercado</p>
-    <p>Promoción</p>
-    <p>Sobre nosotros</p>
-  </div>
-</footer>
+    <div class="flex-item">
+      <p>Síguenos</p>
+      <p>Instagram</p>
+      <p>Facebook</p>
+      <p>Youtube</p>
+    </div>
+    <div class="flex-item">
+      <p>Contenidos</p>
+      <p>Catálogos digitales</p>
+      <p>Supermercado</p>
+      <p>Promoción</p>
+      <p>Sobre nosotros</p>
+    </div>
+  </footer>
 
 </body>
+
 </html>
-
-

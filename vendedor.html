@@ -13,7 +13,7 @@
     }
 
     header {
-      background-color: #e0eaf5; 
+      background-color: #64a0d7; 
       padding: 10px;
       text-align: left;
       display: flex;
@@ -94,17 +94,25 @@
       margin-top: 20px;
       padding: 10px;
       border-radius: 70%;
-      background-color: #4CAF50; 
-      color: white;
+      background-color: #4794dd;
       border: none;
       border-radius: 5px; 
       cursor: pointer;
       font-size: 18px;
       margin-left: -840px;
+      transition: all .3s;
+    }
+
+    #productos-button:hover{
+      background: #7fb7ec;
+    }
+
+    #productos-button a{
+      text-decoration: none;
+      color: #fff;
     }
 
     #productos-section {
-      
       height: 280px; 
       display: flex;
       flex-direction: column;
@@ -112,7 +120,12 @@
       align-items: center;
       color: white;
       margin-top: 20px;
-      width: 900px;
+      width: 100%;
+      background-image: url(img/frutas.png);
+      background-color: #141414;
+      background-blend-mode: hard-light;
+      background-size: cover;
+      background-position: 0;
     }
 
     footer {
@@ -120,7 +133,7 @@
       padding: 10px;
       text-align: center;
       display: flex;
-      width: 100%;
+      width: 98%;
       margin-top: 20px;
       position: relative;
       z-index: 2;
@@ -182,7 +195,7 @@
 <body>
 
   <header>
-    <img src="img/FarmFusion.png" alt="Logo de la tienda" id="logo">
+    <img src="img/FarmFusion2-.png" alt="Logo de la tienda" id="logo">
     <div id="search-container">
         <div>
           <h2>inventario</h2>
@@ -198,7 +211,7 @@
         </div>
       </div>
     <div>
-      <div id="logout">Cerrar Sesión</div>
+      <a href="Index.html"><div id="logout">Cerrar Sesión</div></a>
       <div id="cart">🛒</div>
     </div>
   </header>
@@ -210,10 +223,10 @@
         <div>Nombre del Usuario</div>
         <div id="user-type">vendedor</div>
       </div>
-      <div id="config-icon">⚙</div>
+      <a href="herramientas.html"><div id="config-icon">⚙</div></a>
     </div>
     <div id="productos-section">
-      <button id="productos-button">Productos</button>
+      <a href="productos.html"><button id="productos-button">Productos</button></a>
       <button id="agregar-productos-button">Agregar Productos</button>
     </div>
    

@@ -6,6 +6,62 @@
 	font-family: "Karla", sans-serif;
 	text-decoration: none;
 }
+header {
+    background-color: #64a0d7;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px; 
+}
+
+header img {
+    width: 200px; 
+}
+
+header button {
+    font-size: 19px; 
+    background-color: white; 
+    color: black; 
+    border: none;
+    padding: 10px 15px; 
+    border-radius: 10px; 
+    cursor: pointer;
+}
+
+header button:hover {
+    background-color: #9ac4ee; 
+}
+#search-container {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start; 
+	margin-left: -190px;
+  }
+
+  #search-bar {
+	margin-top: 10px;
+	display: flex;
+	border-radius: 20px; 
+	overflow: hidden; 
+	background-color: #fff; 
+  }
+
+  #search-bar input {
+	flex-grow: 0.5;   
+	padding: 8px; 
+	border: none;
+	outline: none; 
+  }
+
+  #search-bar button {
+	padding: 8px 10px; 
+	background-color: #4CAF50; 
+	color: white;
+	border: none;
+	border-radius: 0 20px 20px 0; 
+	cursor: pointer;
+  }
 /* css olvidoclv.html */
 .error {
 	opacity: 0;
@@ -232,6 +288,7 @@ input {
 	display: grid;
 	grid-template-columns: 50% 50%;
 	place-items: center;
+	margin-top: 4vw;
 }
 .informacion__img {
 	grid-column-start: 1;
@@ -271,6 +328,10 @@ input {
 }
 
 /* Sobrenos.html */
+.contenedor__nos{
+	margin-top: 1vw;
+	margin-bottom: 18.7vw;
+}
 .contenedor__nos h2 {
 	display: flex;
 	justify-content: center;
@@ -286,7 +347,9 @@ input {
 	background-color: #e1e1e1;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, -39%);
+	text-align: center;
+	justify-content: center;
 }
 /* footer */
 .flex-container {
@@ -294,11 +357,12 @@ input {
 	padding: 10px;
 	text-align: center;
 	display: flex;
-	position: absolute;
+	position: relative;
 	right: 0;
 	bottom: 0;
 	left: 0;
 	font-size: 1.5vw;
+	margin-top: 7vw;
 }
 
 .flex-item {
@@ -318,171 +382,3 @@ input {
 	cursor: pointer;
 	margin: 5px 0;
 }
-
-/* homepage.html */
-header {
-	background-color: #64a0d7; 
-	padding: 10px;
-	text-align: left;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	position: relative;
-	z-index: 2;
-  }
-
-  #logo {
-	width: 210px; 
-	max-height: 200px;
-	margin-right: 20px;
-  }
-
-  #search-container {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start; 
-	margin-left: -190px;
-  }
-
-  #search-bar {
-	margin-top: 10px;
-	display: flex;
-	border-radius: 20px; 
-	overflow: hidden; 
-	background-color: #fff; 
-  }
-
-  #search-bar input {
-	flex-grow: 0.5;   
-	padding: 8px; 
-	border: none;
-	outline: none; 
-  }
-
-  #search-bar button {
-	padding: 8px 10px; 
-	background-color: #4CAF50; 
-	color: white;
-	border: none;
-	border-radius: 0 20px 20px 0; 
-	cursor: pointer;
-  }
-
-  #logout {
-	margin-top: 10px;
-	cursor: pointer;
-	font-size: 16px; 
-	border: 2px solid #fff; 
-	padding: 5px 8px; 
-	border-radius: 19px; 
-	transition: background-color 0.3s ease; 
-	margin-left: -170px;
-  }
-
-  #logout:hover {
-	background-color: #fff; 
-  }
-
-  #cart {
-	margin-top: 10px;
-	cursor: pointer;
-	font-size: 20px; 
-	margin-left: -120px; 
-	width: 65px;
-  }
-
-  .main {
-	background-color: rgba(255, 255, 255, 0.7); 
-	padding: 20px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	position: relative;
-	z-index: 1;
-	margin-bottom: 2vw;
-  }
-
-  #profile-section {
-	display: flex;
-	align-items: center;
-	margin-bottom: 20px;
-  }
-
-  #profile-image {
-	width: 40px; 
-	height: 40px;
-	border-radius: 50%;
-	margin-right: 10px; 
-  }
-
-  #user-type {
-	font-size: 18px;
-	margin-left: 1020px; 
-	margin-top: -20px;
-  }
-
-  #config-icon {
-	font-size: 24px;
-	cursor: pointer;
-	width: 40px; 
-	margin-top: -15px;
-	margin-left: 40px;
-  }
-
-  #productos-button {
-	margin-top: 20px;
-	padding: 10px;
-	border-radius: 70%;
-	background-color: #4CAF50; 
-	color: white;
-	border: none;
-	border-radius: 5px; 
-	cursor: pointer;
-	font-size: 18px;
-	margin-left: -840px;
-  }
-
-  #productos-section {
-	
-	height: 280px; 
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	color: white;
-	margin-top: 20px;
-	width: 900px;
-  }
-
-  .footer {
-	background-color: rgba(204, 204, 204, 0.8);
-	padding: 10px; 
-	text-align: center;
-	display: flex;
-	width: 100%;
-	margin-top: 20px;
-	position: relative;
-	z-index: 2;
-  }
-
-  .flex-container {
-	display: flex;
-  }
-
-  .flex-item {
-	text-align: left;
-	margin: 0 10px; 
-  }
-
-  .flex-item:first-child {
-	margin-right: auto; 
-  }
-
-  .flex-item:last-child {
-	margin-left: auto; 
-  }
-
-  .flex-item p {
-	cursor: pointer;
-	margin: 5px 0;
-  }
